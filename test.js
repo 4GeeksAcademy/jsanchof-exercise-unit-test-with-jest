@@ -32,7 +32,8 @@ test("One Dollar should be 167.45 Yens", function() {
     const yens = fromDollarToYen(3.5);
 
     // If 1 euro is 1.07 dollars, then 3.5 euros should be (3.5 * 1.07) * 156.5
-    const expected = (3.5 * 1.07) * 156.5; 
+    let aux = 3.5 * 1.07;
+    const expected = aux * 156.5; 
     
     // This is the comparison for the unit test
      expect(fromDollarToYen(3.5)).toBe(586.09); // 1 euro is 1.07 dollars, then 3.5 euros should be = (3.5 * 1.07)

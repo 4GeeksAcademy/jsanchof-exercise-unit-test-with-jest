@@ -11,7 +11,7 @@ const fromDollarToYen = function(valueInDollar) {
     // Convert the given valueInDollar to Yen
     let valueInYen = (valueInDollar * 1.07) * 156.5;
     // return the dollar value
-    return valueInDollar;
+    return valueInYen;
 }
 
 // This is my function that sums two numbers
